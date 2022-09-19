@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb2D;
 
-    public float speed = 5.0f;
+    //public float speed = 50.0f;
     public float xMovement;
 
     // Start is called before the first frame update
@@ -26,6 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2D.velocity = new Vector2(xMovement * speed, rb2D.velocity.y);
+        rb2D.velocity = new Vector2(xMovement * 10, rb2D.velocity.y);
     }
 }
